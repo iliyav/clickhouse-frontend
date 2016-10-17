@@ -63,8 +63,7 @@
 			var url = 'http://' + connection.host +
 				'/?query=' + encodeURIComponent(sql + ' ' + format ) +
 				'&user=' + connection.login +
-				'&password=' + connection.password +
-				'&add_http_cors_header=1';
+				'&password=' + connection.password;
 			if (withDatabase) {
 				url += '&database=' + database;
 			}
